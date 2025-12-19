@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/talent-solution/layout,_N_T_/talent-solution/contract-to-hire/layout,_N_T_/talent-solution/contract-to-hire/page,_N_T_/talent-solution/contract-to-hire"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/talent-solution/contract-to-hire/__PAGE__",
+    "/talent-solution/contract-to-hire",
+    "/talent-solution",
+    "/_index",
+    "/_head"
+  ]
+}

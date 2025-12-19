@@ -1,0 +1,3 @@
+module.exports=[6160,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(67768);a.n(d("[project]/OneDrive/Desktop/Koyetech1/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},30542,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(67768);a.n(d("[project]/OneDrive/Desktop/Koyetech1/node_modules/next/dist/client/components/builtin/global-error.js"))},17943,a=>{"use strict";a.i(6160);var b=a.i(30542);a.n(b)}];
+
+//# sourceMappingURL=f4763_next_dist_client_components_builtin_global-error_29c02924.js.map

@@ -1,0 +1,16 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/talent-solution/layout,_N_T_/talent-solution/contract-staff-augmentation/layout,_N_T_/talent-solution/contract-staff-augmentation/page,_N_T_/talent-solution/contract-staff-augmentation"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/talent-solution/contract-staff-augmentation/__PAGE__",
+    "/talent-solution/contract-staff-augmentation",
+    "/talent-solution",
+    "/_index",
+    "/_head"
+  ]
+}

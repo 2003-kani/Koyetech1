@@ -1,0 +1,176 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/accelerators",
+      "regex": "^/accelerators(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/accelerators(?:/)?$"
+    },
+    {
+      "page": "/api/contact",
+      "regex": "^/api/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/contact(?:/)?$"
+    },
+    {
+      "page": "/business-solutions/application-development-maintenance",
+      "regex": "^/business\\-solutions/application\\-development\\-maintenance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business\\-solutions/application\\-development\\-maintenance(?:/)?$"
+    },
+    {
+      "page": "/business-solutions/artificial-intelligence-machine-learning",
+      "regex": "^/business\\-solutions/artificial\\-intelligence\\-machine\\-learning(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business\\-solutions/artificial\\-intelligence\\-machine\\-learning(?:/)?$"
+    },
+    {
+      "page": "/business-solutions/data-analytics",
+      "regex": "^/business\\-solutions/data\\-analytics(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business\\-solutions/data\\-analytics(?:/)?$"
+    },
+    {
+      "page": "/business-solutions/data-modernization",
+      "regex": "^/business\\-solutions/data\\-modernization(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business\\-solutions/data\\-modernization(?:/)?$"
+    },
+    {
+      "page": "/business-solutions/interop-solutions",
+      "regex": "^/business\\-solutions/interop\\-solutions(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business\\-solutions/interop\\-solutions(?:/)?$"
+    },
+    {
+      "page": "/business-solutions/product-development",
+      "regex": "^/business\\-solutions/product\\-development(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business\\-solutions/product\\-development(?:/)?$"
+    },
+    {
+      "page": "/business-solutions/product-implementation-operations",
+      "regex": "^/business\\-solutions/product\\-implementation\\-operations(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business\\-solutions/product\\-implementation\\-operations(?:/)?$"
+    },
+    {
+      "page": "/business-solutions/product-management",
+      "regex": "^/business\\-solutions/product\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business\\-solutions/product\\-management(?:/)?$"
+    },
+    {
+      "page": "/business-solutions/project-management",
+      "regex": "^/business\\-solutions/project\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/business\\-solutions/project\\-management(?:/)?$"
+    },
+    {
+      "page": "/career",
+      "regex": "^/career(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/career(?:/)?$"
+    },
+    {
+      "page": "/company",
+      "regex": "^/company(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/company(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/partner-services",
+      "regex": "^/partner\\-services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/partner\\-services(?:/)?$"
+    },
+    {
+      "page": "/talent-solution/contract-staff-augmentation",
+      "regex": "^/talent\\-solution/contract\\-staff\\-augmentation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/talent\\-solution/contract\\-staff\\-augmentation(?:/)?$"
+    },
+    {
+      "page": "/talent-solution/contract-to-hire",
+      "regex": "^/talent\\-solution/contract\\-to\\-hire(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/talent\\-solution/contract\\-to\\-hire(?:/)?$"
+    },
+    {
+      "page": "/talent-solution/firm-hire-services",
+      "regex": "^/talent\\-solution/firm\\-hire\\-services(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/talent\\-solution/firm\\-hire\\-services(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
