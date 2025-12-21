@@ -63,15 +63,29 @@ function Dropdown({
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [expandedDropdown, setExpandedDropdown] = useState<string | null>(null);
   const business = nav.mega.businessSolutions.items;
   const talent = nav.mega.talentSolution.items;
 
+  const toggleDropdown = (label: string) => {
+    setExpandedDropdown(expandedDropdown === label ? null : label);
+  };
+
   const mobileGroups = useMemo(
     () => [
+      { label: "Home", items: [{ label: "Home", href: "/" }] },
       { label: "Company", items: [{ label: "Company", href: "/company" }] },
-      { label: "Business Solutions", items: business },
+      { 
+        label: "Business Solutions", 
+        items: business,
+        isDropdown: true
+      },
       { label: "Accelerators", items: [{ label: "Accelerators", href: "/accelerators" }] },
-      { label: "Talent Solution", items: talent },
+      { 
+        label: "Talent Solution", 
+        items: talent,
+        isDropdown: true
+      },
       { label: "Career", items: [{ label: "Career", href: "/career" }] },
       { label: "Contact", items: [{ label: "Contact", href: "/contact" }] },
     ],
@@ -119,21 +133,31 @@ export function SiteHeader() {
             <div className="grid gap-4">
               {mobileGroups.map((g) => (
                 <div key={g.label}>
-                  <div className="text-xs font-semibold uppercase tracking-wider text-slate-500">
+                  <div 
+                    className="flex items-center justify-between text-sm font-semibold text-slate-900 px-3 py-2 rounded-lg hover:bg-slate-50 cursor-pointer"
+                    onClick={() => g.items.length > 1 ? toggleDropdown(g.label) : (window.location.href = g.items[0].href)}
+                  >
                     {g.label}
+                    {g.items.length > 1 && (
+                      <span className="text-slate-400 text-xs transform transition-transform">
+                        {expandedDropdown === g.label ? '▲' : '▼'}
+                      </span>
+                    )}
                   </div>
-                  <div className="mt-2 grid gap-2">
-                    {g.items.map((it) => (
-                      <Link
-                        key={it.href}
-                        href={it.href}
-                        onClick={() => setOpen(false)}
-                        className="rounded-xl px-3 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-50"
-                      >
-                        {it.label}
-                      </Link>
-                    ))}
-                  </div>
+                  {(expandedDropdown === g.label || g.items.length === 1) && (
+                    <div className="mt-1 ml-4 space-y-1">
+                      {g.items.map((it) => (
+                        <Link
+                          key={it.href}
+                          href={it.href}
+                          onClick={() => setOpen(false)}
+                          className="block px-3 py-2 text-sm text-slate-700 rounded-lg hover:bg-slate-50"
+                        >
+                          {it.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
