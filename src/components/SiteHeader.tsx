@@ -34,12 +34,12 @@ function Dropdown({
   items: Array<{ label: string; href: string; description?: string }>;
 }) {
   return (
-    <div className="group relative hidden md:block">
+    <div className="group relative">
       <button className="inline-flex items-center gap-1 px-3 py-2 text-base font-medium text-slate-600 hover:text-slate-900 transition-colors rounded-lg hover:bg-slate-100">
         {label}
         <span className="text-slate-400 text-[10px]">▼</span>
       </button>
-      <div className="invisible absolute right-0 top-full z-50 mt-1 w-[280px] rounded-xl border border-slate-200 bg-white p-2 shadow-xl shadow-slate-200/50 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 translate-y-2">
+      <div className="invisible absolute right-0 top-full z-50 mt-1 w-[280px] rounded-xl border border-slate-200 bg-white p-2 shadow-xl shadow-slate-200/50 opacity-0 transition-all duration-200 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 md:block">
         <div className="grid gap-1">
           {items.map((it) => (
             <Link
@@ -89,7 +89,7 @@ export function SiteHeader() {
           </div>
 
           <nav className="hidden items-center space-x-4 md:flex">
-            <div className="flex items-center space-x-2">
+            <div className="hidden items-center space-x-2 md:flex">
               <MenuLink href="/">Home</MenuLink>
               <MenuLink href="/company">Company</MenuLink>
               <Dropdown label="Business Solutions" items={business} />
