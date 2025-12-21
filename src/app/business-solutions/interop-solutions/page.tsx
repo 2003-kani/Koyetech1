@@ -8,39 +8,35 @@ export const metadata: Metadata = {
 export default function InteropSolutionsPage() {
   return (
     <StandardPage
-      title="Interop Solutions"
-      subtitle="Connect systems reliably with well-designed integrations, APIs, and interoperability patterns."
+      title="Seamless Connections, Stronger Performance"
+      subtitle="KOYETECH’s Interop Solutions break down these barriers by connecting your platforms so they can share accurate, up-to-date information securely."
       sections={[
         {
-          title: "Integration strategy",
-          body: "We help you choose the right integration approach—APIs, event-driven patterns, or managed middleware—based on your constraints and scale.",
-          bullets: [
-            "System integration assessment",
-            "API strategy and standards",
-            "Event-driven architectures",
-            "Security and access patterns",
-          ],
+          title: "Unified View",
+          body: "All the information you need, in one place.",
         },
         {
-          title: "Implementation",
-          body: "Build integrations that are observable, testable, and resilient—so they don’t become a maintenance burden.",
-          bullets: [
-            "Integration development",
-            "Contract testing",
-            "Monitoring and alerting",
-            "Operational runbooks",
-          ],
+          title: "Operational Efficiency",
+          body: "Less manual data entry and fewer errors.",
         },
         {
-          title: "Outcomes",
-          body: "Systems that work together smoothly—reducing manual work and improving data consistency.",
-          bullets: [
-            "Reduced manual effort",
-            "Improved reliability",
-            "Cleaner data flow",
-            "Faster change delivery",
-          ],
+          title: "Improved Collaboration",
+          body: "Teams and departments work from the same playbook.",
         },
+        {
+          title: "Scalable Architecture",
+          body: "Easy to integrate future tools and technologies.",
+        },
+        {
+          title: "Our Method",
+          body: "Connecting platforms for secure information sharing.",
+          bullets: [
+            "System Audit: Understand the technology landscape and workflows.",
+            "Integration Design: Map how systems will connect and exchange data.",
+            "Deployment: Implement connections with minimal downtime.",
+            "Monitoring: Ensure ongoing performance, security, and compatibility."
+          ],
+        }
       ]}
     />
   );

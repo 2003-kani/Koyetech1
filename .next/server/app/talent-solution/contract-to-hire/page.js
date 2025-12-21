@@ -1,5 +1,5 @@
 var R=require("../../../chunks/ssr/[turbopack]_runtime.js")("server/app/talent-solution/contract-to-hire/page.js")
-R.c("server/chunks/ssr/[root-of-the-server]__72dae7d4._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__5e231f99._.js")
 R.c("server/chunks/ssr/OneDrive_Desktop_Koyetech1_a3cf4b28._.js")
 R.c("server/chunks/ssr/OneDrive_Desktop_Koyetech1_67dc7976._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__a4d1e57f._.js")

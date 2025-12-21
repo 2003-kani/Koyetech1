@@ -17,7 +17,7 @@ export default function ContactPage() {
         subtitle="Reach out to discuss your project, explore partnership opportunities, or learn more about our services."
       />
 
-      <Section className="bg-slate-50 pb-24 border-t border-slate-200">
+      <Section className="bg-gradient-to-br from-white via-emerald-200/50 to-white pb-24 border-t border-emerald-200/50">
         <Container>
           <div className="flex flex-col lg:flex-row gap-12">
 

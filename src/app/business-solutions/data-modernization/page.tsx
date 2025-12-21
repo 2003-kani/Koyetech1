@@ -8,39 +8,35 @@ export const metadata: Metadata = {
 export default function DataModernizationPage() {
   return (
     <StandardPage
-      title="Data Modernization"
-      subtitle="Build a modern data foundation for analytics, AI, and operational reporting—securely and sustainably."
+      title="Modern Data Infrastructure for a Changing World"
+      subtitle="Technology evolves quickly — but many organizations are still relying on systems built for a different era. KOYETECH’s Data Modernization services replace the limitations of the past with secure, scalable, and future-ready solutions."
       sections={[
         {
-          title: "Modern data foundations",
-          body: "We help you consolidate, clean, and govern data so teams can trust it and use it confidently.",
-          bullets: [
-            "Data platform assessment",
-            "Lake / warehouse patterns",
-            "Data governance basics",
-            "Security and access control",
-          ],
+          title: "Real-Time Access to Data",
+          body: "Eliminate delays that impact operations and decision-making.",
         },
         {
-          title: "Migration and enablement",
-          body: "Move from legacy systems to modern platforms with minimal disruption and clear operational ownership.",
-          bullets: [
-            "Migration planning",
-            "ETL/ELT modernization",
-            "Performance tuning",
-            "Operational monitoring",
-          ],
+          title: "Regulatory Confidence",
+          body: "Meet industry standards, from HIPAA to financial and data protection laws.",
         },
         {
-          title: "Outcomes",
-          body: "A data environment that is easier to scale, easier to secure, and ready for analytics and AI.",
-          bullets: [
-            "Faster data access",
-            "Improved data quality",
-            "Better governance",
-            "Lower operational burden",
-          ],
+          title: "Cost Efficiency",
+          body: "Reduce maintenance costs tied to legacy infrastructure.",
         },
+        {
+          title: "Prepared for Tomorrow",
+          body: "Enable advanced analytics, automation, and emerging technologies.",
+        },
+        {
+          title: "Our Process",
+          body: "A clear path for migration with minimal disruption.",
+          bullets: [
+            "System Evaluation: We identify bottlenecks, risks, and modernization opportunities.",
+            "Strategic Roadmap: A clear plan for migration with minimal disruption.",
+            "Secure Data Migration: Move information safely and without data loss.",
+            "Performance Optimization: Fine-tuning for speed, scalability, and stability."
+          ],
+        }
       ]}
     />
   );

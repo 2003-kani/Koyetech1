@@ -1,6 +1,30 @@
 {
   "app": {
+    "[project]/OneDrive/Desktop/Koyetech1/src/app/_not-found/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
     "[project]/OneDrive/Desktop/Koyetech1/src/app/accelerators/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/OneDrive/Desktop/Koyetech1/src/app/business-solutions/artificial-intelligence-machine-learning/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/OneDrive/Desktop/Koyetech1/src/app/business-solutions/data-analytics/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/OneDrive/Desktop/Koyetech1/src/app/business-solutions/interop-solutions/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/OneDrive/Desktop/Koyetech1/src/app/business-solutions/product-development/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/OneDrive/Desktop/Koyetech1/src/app/business-solutions/product-management/page": [
       "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     ],
@@ -17,6 +41,18 @@
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     ],
     "[project]/OneDrive/Desktop/Koyetech1/src/app/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/OneDrive/Desktop/Koyetech1/src/app/talent-solution/contract-staff-augmentation/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/OneDrive/Desktop/Koyetech1/src/app/talent-solution/contract-to-hire/page": [
+      "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
+    ],
+    "[project]/OneDrive/Desktop/Koyetech1/src/app/talent-solution/firm-hire-services/page": [
       "static/media/1b99372b3eaef0c8-s.p.758e15a8.woff2",
       "static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2"
     ]

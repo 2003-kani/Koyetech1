@@ -287,39 +287,25 @@ const metadata = {
 };
 function CompanyPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Koyetech1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Koyetech1$2f$src$2f$components$2f$StandardPage$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["StandardPage"], {
-        title: "About KoyeTech",
-        subtitle: "Empowering businesses through innovation and exceptional talent.",
+        title: "About Koyetech",
+        subtitle: "KoyeTech is a rapidly growing IT consulting and solutions company headquartered in Connecticut, USA, with an additional office in Hyderabad, India. We specialize in IT consulting, project and product management, software development, and managed services delivery, serving a wide range of industries including healthcare. Our team delivers highly skilled, trained, and certified professionals to help clients achieve strategic goals and maintain a competitive edge.",
         sections: [
             {
-                title: "Who We Are",
-                body: "KoyeTech is a rapidly growing IT consulting and solutions company headquartered in Connecticut, USA, with an office in India. We combine experienced practitioners with modern ways of working.",
-                bullets: [
-                    "Headquarted in Connecticut, USA",
-                    "Offshore presence in India",
-                    "Rapidly growing IT consulting",
-                    "Innovation-driven approach"
-                ]
+                title: "Mission",
+                body: "Empowering partners to achieve sustainable growth and operational excellence through our innovation and exceptional talent."
             },
             {
-                title: "Mission & Vision",
-                body: "Our mission is to empower our partners to achieve sustainable growth and scale efficiently. We envision a future where technology drives success through agile development and strategic innovation.",
-                bullets: [
-                    "Empower partners",
-                    "Sustainable growth",
-                    "Agile development",
-                    "Strategic innovation"
-                ]
+                title: "Vision",
+                body: "Driving partner success through integrated talent, agile development, and purposeful innovation, solving real business challenges and creating lasting impact."
             },
             {
-                title: "Core Values",
-                body: "Our culture is defined by our commitment to these values:",
+                title: "Our Core Values",
+                body: "Our foundation is built on values that ensure mutual success for our partners and team members.",
                 bullets: [
-                    "Innovation: We constantly push boundaries.",
-                    "Partnership: We build lasting relationships.",
-                    "Excellence: We deliver diversity of thought.",
-                    "Growth: We help you scale.",
-                    "Integrity: Validated learning and trust.",
-                    "Global Reach: Delivering worldwide impact."
+                    "Innovation: Driving forward-thinking solutions.",
+                    "Integrity: Upholding the highest standards of honesty.",
+                    "Excellence: Commitment to quality in everything we do.",
+                    "Collaboration: Succeeding together with our partners."
                 ]
             }
         ]

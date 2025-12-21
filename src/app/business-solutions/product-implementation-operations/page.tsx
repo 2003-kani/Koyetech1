@@ -8,37 +8,42 @@ export const metadata: Metadata = {
 export default function ProductImplementationOperationsPage() {
   return (
     <StandardPage
-      title="Product Implementation / Operations"
-      subtitle="Launch smoothly, operate reliably, and continuously improve—without slowing down delivery."
+      title="Seamless Deployment. Scalable Operations. Sustainable Success."
+      subtitle="KoyeTech ensures seamless product implementation and support for maximum value and user adoption."
       sections={[
         {
-          title: "Implementation and rollout",
-          body: "We support launches with clear cutover planning, stakeholder alignment, and training materials.",
-          bullets: [
-            "Release planning and cutover",
-            "User onboarding and training",
-            "Playbooks and runbooks",
-            "Post-launch stabilization",
-          ],
+          title: "Product Onboarding & Deployment",
+          body: "From setup to launch, we handle end to end implementation tailored to your tech stack and workflows.",
         },
         {
-          title: "Operational excellence",
-          body: "Reduce downtime and incident impact through monitoring, clear ownership, and practical SRE-style practices.",
-          bullets: [
-            "Monitoring and alerting",
-            "Incident response workflows",
-            "SLA/SLO definition",
-            "Continuous improvement loops",
-          ],
+          title: "System Integration",
+          body: "Connect your product with third party tools, CRMs, ERPs, and internal systems to maximize performance.",
         },
         {
-          title: "Outcomes",
-          body: "More reliable operations, fewer surprises, and a calmer, more predictable delivery environment.",
+          title: "SOP Development & Knowledge Transfer",
+          body: "We build clear documentation, process guides, and training plans for seamless internal adoption.",
+        },
+        {
+          title: "Post Launch Support & Issue Resolution",
+          body: "Ensure continuity with structured support, issue tracking, and SLA based resolution.",
+        },
+        {
+          title: "Operations Optimization",
+          body: "We monitor, analyze, and refine daily operations to improve product performance and user experience.",
+        },
+        {
+          title: "Reporting & KPI Tracking",
+          body: "Real time dashboards and analytics help you measure success and drive data informed decisions.",
+        },
+        {
+          title: "Our Implementation Process",
+          body: "A proven lifecycle for rollout success.",
           bullets: [
-            "Reduced incidents",
-            "Faster recovery",
-            "Higher customer satisfaction",
-            "Better operational visibility",
+            "Requirement Analysis: We evaluate business objectives, technical needs, and user expectations.",
+            "Solution Design & Planning: Crafting a roadmap tailored to your tech stack, timelines, and resource availability.",
+            "Configuration & Customization: We align product features and workflows with your business use cases.",
+            "Integration & Testing: Connect with internal systems, perform QA/UAT, and ensure data integrity.",
+            "Go Live & Team Training: Smooth launch with full team enablement and seamless knowledge transfer."
           ],
         },
       ]}

@@ -8,37 +8,28 @@ export const metadata: Metadata = {
 export default function ProductManagementPage() {
   return (
     <StandardPage
-      title="Product Management"
-      subtitle="Turn business goals into a clear product strategy, roadmap, and delivery plan that teams can execute."
+      title="Agile Project Management That Drives Results"
+      subtitle="From planning to execution, we manage timelines, resources, and risks so you can focus on growth."
       sections={[
         {
-          title: "Strategy and discovery",
-          body: "We help you define customer problems, validate assumptions, and prioritize the highest‑value work—before you invest heavily in build.",
+          title: "Experience Seamless Project Execution",
+          body: "Our methodology ensures transparency, efficiency, and high-quality results for every engagement.",
           bullets: [
-            "Discovery workshops",
-            "User journeys and requirements",
-            "Backlog and prioritization",
-            "Roadmap planning",
+            "Expert Agile & Waterfall Methodology",
+            "Risk Mitigation & Resource Optimization",
+            "Budget & Timeline Management",
+            "End-to-End Delivery Tracking",
           ],
         },
         {
-          title: "Delivery leadership",
-          body: "Keep cross‑functional teams aligned with clear goals, acceptance criteria, and release planning.",
+          title: "How Our Process Works",
+          body: "A proven lifecycle for project success.",
           bullets: [
-            "Sprint planning and refinement",
-            "Stakeholder communication",
-            "Release and dependency management",
-            "Metrics and KPI definition",
-          ],
-        },
-        {
-          title: "Outcomes",
-          body: "A stronger product foundation with better alignment, faster execution, and less rework.",
-          bullets: [
-            "Clear roadmap",
-            "Improved stakeholder alignment",
-            "Faster time-to-value",
-            "Reduced scope churn",
+            "Discovery: Defining requirements and setting clear objectives.",
+            "Planning: Building a detailed roadmap and allocating resources.",
+            "Execution: Daily progress tracking and iterative development.",
+            "Quality Assurance: Regular reviews to ensure alignment with goals.",
+            "Project Closing: Final delivery and performance assessment.",
           ],
         },
       ]}

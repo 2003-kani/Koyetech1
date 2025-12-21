@@ -1,6 +1,6 @@
 var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/company/page.js")
 R.c("server/chunks/ssr/f4763_next_dist_4441a26f._.js")
-R.c("server/chunks/ssr/[root-of-the-server]__ddd5a3b4._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__e1c6263a._.js")
 R.c("server/chunks/ssr/f4763_ae065ccb._.js")
 R.c("server/chunks/ssr/[root-of-the-server]__e8a2741f._.js")
 R.c("server/chunks/ssr/OneDrive_Desktop_Koyetech1_src_app_1a68a442._.js")

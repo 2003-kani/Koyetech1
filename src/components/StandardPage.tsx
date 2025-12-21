@@ -18,38 +18,58 @@ export function StandardPage({
   sections: StandardSection[];
 }) {
   return (
-    <div>
-      <PageHero title={title} subtitle={subtitle} />
-      <Section className="min-h-screen bg-transparent pb-24">
+    <main className="min-h-screen bg-white selection:bg-brand-primary/10">
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-20 overflow-hidden bg-gradient-to-br from-white via-blue-300 to-white">
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none -z-10">
+          <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[120px]"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-[120px]"></div>
+        </div>
+        <Container className="text-center">
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-tight">
+              {title}
+            </h1>
+            {subtitle && (
+              <p className="text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto">
+                {subtitle}
+              </p>
+            )}
+          </div>
+        </Container>
+      </section>
+
+      {/* Content Sections */}
+      <section className="py-24 bg-white">
         <Container>
-          <div className="grid gap-8">
-            {sections.map((s, i) => (
-              <div
-                key={s.title}
-                className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1 animate-fade-in-up"
-                style={{ animationDelay: `${i * 100}ms` }}
-              >
-                <h2 className="text-2xl font-bold tracking-tight text-slate-900 mb-4">
-                  {s.title}
+          {sections.map((section, i) => (
+            <div
+              key={i}
+              className="bg-slate-50 p-10 md:p-14 rounded-3xl border border-slate-200 shadow-sm hover:shadow-2xl hover:border-brand-primary hover:scale-[1.01] transition-all duration-500 animate-fade-in-up"
+              style={{ animationDelay: `${i * 150}ms` }}
+            >
+              <div className="max-w-4xl">
+                <h2 className="text-4xl font-bold text-slate-900 mb-8">
+                  {section.title}
                 </h2>
-                <p className="mt-3 text-base leading-relaxed text-slate-600 sm:text-lg">
-                  {s.body}
+                <p className="text-xl text-slate-600 leading-relaxed mb-10">
+                  {section.body}
                 </p>
-                {s.bullets?.length ? (
-                  <ul className="mt-6 grid gap-3 text-base text-slate-600 sm:grid-cols-2">
-                    {s.bullets.map((b) => (
-                      <li key={b} className="flex gap-3 items-start">
-                        <span className="mt-1.5 inline-block h-2 w-2 rounded-full bg-brand-primary/60 shrink-0" />
-                        <span>{b}</span>
+                {section.bullets && (
+                  <ul className="grid sm:grid-cols-2 gap-6">
+                    {section.bullets.map((bullet, j) => (
+                      <li key={j} className="flex items-start gap-4 group">
+                        <div className="mt-2 w-2.5 h-2.5 rounded-full bg-brand-primary group-hover:scale-125 transition-transform"></div>
+                        <span className="text-slate-700 font-medium text-lg">{bullet}</span>
                       </li>
                     ))}
                   </ul>
-                ) : null}
+                )}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </Container>
-      </Section>
-    </div>
+      </section>
+    </main>
   );
 }

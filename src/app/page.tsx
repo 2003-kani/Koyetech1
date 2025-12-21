@@ -8,256 +8,264 @@ import { nav } from '@/lib/nav';
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-brand-primary/20 overflow-x-hidden">
+    <div className="min-h-screen bg-white selection:bg-brand-primary/10">
       <main>
         {/* Hero Section */}
-        <section className="relative pt-32 pb-32 overflow-hidden min-h-[90vh] flex items-center bg-gradient-to-br from-white via-blue-100 to-blue-200/50">
-          {/* Animated Background - Shine Effect */}
-          <div className="absolute inset-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-[-20%] right-[-10%] w-[800px] h-[800px] bg-brand-primary/40 rounded-full blur-[120px] animate-pulse opacity-70 mix-blend-multiply"></div>
-            <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-brand-light/40 rounded-full blur-[100px] animate-float" style={{ animationDuration: '8s' }}></div>
-            <div className="absolute top-[20%] left-[30%] w-[400px] h-[400px] bg-white rounded-full blur-[80px] opacity-90 animate-pulse mix-blend-overlay"></div>
-            <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-10 mix-blend-soft-light"></div>
-            {/* Shine overlay */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/30 to-transparent opacity-40"></div>
-          </div>
-
-          <Container className="relative z-10 flex flex-col items-center text-center">
+        <section className="relative pt-32 pb-32 overflow-hidden bg-gradient-to-br from-white via-blue-300 to-white">
+          <Container className="relative z-10 text-center">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-8 leading-tight animate-fade-in-up drop-shadow-sm">
-                Accelerate Growth with <span className="text-brand-primary relative inline-block">End-to-End <span className="absolute bottom-2 left-0 w-full h-3 bg-brand-primary/10 -z-10 rounded-full"></span></span> Business Solutions
+              <h1 className="text-5xl md:text-8xl font-extrabold tracking-tight text-slate-900 mb-8 leading-tight animate-fade-in">
+                Accelerating <span className="text-brand-primary">Innovation</span> with Intelligent Tech Solutions
               </h1>
-              <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed animate-fade-in-up delay-100 font-light">
-                Get comprehensive talent, technology, and product solutions designed for rapid growth and efficiency. Partner with KoyeTech to achieve scale.
+              <p className="text-xl md:text-2xl text-slate-600 mb-12 leading-relaxed max-w-3xl mx-auto animate-fade-in-up">
+                Get comprehensive talent, technology, and product solutions designed for rapid growth and efficiency. Partner with us to achieve scale.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up delay-200">
-                <Button as="a" href="/business-solutions/product-management" className="rounded-full bg-brand-primary px-8 py-4 text-lg font-bold text-white shadow-xl hover:bg-brand-dark transition-all hover:-translate-y-1 hover:shadow-brand-primary/40">
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button as="a" href="#Services" className="rounded-full bg-brand-primary px-10 py-5 text-lg font-semibold text-white hover:bg-brand-dark transition-all shadow-lg shadow-brand-primary/25">
                   Explore Services
                 </Button>
-                <Button as="a" href="/contact" variant="outline" className="rounded-full px-8 py-4 text-lg font-bold bg-white text-slate-900 border-slate-200 hover:bg-slate-50 transition-all hover:-translate-y-1 shadow-sm">
+                <Button as="a" href="mailto:hr@koyetech.com" variant="outline" className="rounded-full px-10 py-5 text-lg font-semibold bg-white text-slate-900 border-slate-200 hover:bg-slate-50 transition-all shadow-sm">
                   Get in Touch
                 </Button>
               </div>
             </div>
           </Container>
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none overflow-hidden -z-10">
+            <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[120px]"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-[120px]"></div>
+          </div>
         </section>
 
-        {/* Our Core Services Section */}
-        <section className="py-24 bg-white">
+        {/* Categories Overview */}
+        <section className="py-24 bg-white animate-fade-in-up" id="Services">
           <Container>
-            <div className="text-center mb-16 relative">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4 relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-brand-primary after:rounded-full">
-                Our Core Services
-              </h2>
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold text-slate-900 mb-4">Our Core Services</h2>
+              <p className="text-slate-600 max-w-2xl mx-auto">Innovative tech solutions driving growth and efficiency.</p>
             </div>
-
             <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
                   title: "Business Solutions",
-                  desc: "Strategic consulting to drive your business forward with innovative solutions.",
-                  icon: "📊"
-                },
-                {
-                  title: "Accelerators",
-                  desc: "Fast-track your growth with our proven acceleration programs.",
-                  icon: "🚀"
-                },
-                {
-                  title: "Talent Solutions",
-                  desc: "Access to a diversified pool of top-tier professionals.",
-                  icon: "👥"
-                }
-              ].map((service, i) => (
-                <div key={i} className="group bg-white border border-slate-200 rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl shadow-sm">
-                  <div className="text-4xl mb-6 bg-brand-primary/5 w-20 h-20 mx-auto rounded-2xl flex items-center justify-center border border-brand-primary/10 group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4">{service.title}</h3>
-                  <p className="text-slate-600 leading-relaxed">{service.desc}</p>
-                </div>
-              ))}
-            </div>
-          </Container>
-        </section>
-
-        {/* Business Solutions Section */}
-        <section className="py-24 bg-slate-50">
-          <Container>
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4 relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-brand-primary after:rounded-full">
-                Business Solutions
-              </h2>
-              <p className="text-slate-600 max-w-2xl mx-auto">Strategic consulting and technology implementation.</p>
-            </div>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {[
-                {
-                  title: "Product Management",
-                  desc: "Strategic product planning and roadmap development to drive business success.",
+                  desc: "Strategy led services to design, develop, and manage high performing digital products.",
+                  icon: "💡",
                   link: "/business-solutions/product-management"
                 },
                 {
-                  title: "AI & ML Solutions",
-                  desc: "Harness the power of AI to automate processes, gain insights, and drive innovation.",
-                  link: "/business-solutions/artificial-intelligence-machine-learning"
-                }
-              ].map((sol, i) => (
-                <div key={i} className="bg-white border border-slate-200 rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg hover:border-brand-primary/30 group">
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-brand-primary transition-colors">{sol.title}</h3>
-                  <p className="text-slate-600 mb-6">{sol.desc}</p>
-                  <Link href={sol.link} className="text-brand-primary font-semibold hover:underline">Learn more &rarr;</Link>
-                </div>
-              ))}
-            </div>
-          </Container>
-        </section>
-
-        {/* Accelerators Section */}
-        <section className="py-24 bg-white">
-          <Container>
-            <div className="text-center mb-16 relative">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4 relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-brand-primary after:rounded-full">
-                Accelerators
-              </h2>
-              <p className="text-slate-600 max-w-2xl mx-auto">Pre-built solutions and frameworks to accelerate your time-to-market.</p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {[
-                {
-                  title: "Domain-Specific Tools",
-                  desc: "Leverage our specialized tools designed for your industry vertical.",
-                  icon: "🛠️"
+                  title: "Accelerators",
+                  desc: "Fast track innovation and go to market with frameworks, tools, and execution pods.",
+                  icon: "🚀",
+                  link: "/accelerators"
                 },
                 {
-                  title: "Analytics & Insight",
-                  desc: "Turn data into actionable intelligence with our advanced analytics frameworks.",
-                  icon: "📈"
-                }
-              ].map((service, i) => (
-                <div key={i} className="group bg-white border border-slate-200 rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-xl shadow-sm">
-                  <div className="text-4xl mb-6 bg-brand-primary/5 w-20 h-20 mx-auto rounded-2xl flex items-center justify-center border border-brand-primary/10 group-hover:scale-110 transition-transform duration-300">{service.icon}</div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4">{service.title}</h3>
-                  <p className="text-slate-600 leading-relaxed">{service.desc}</p>
-                </div>
-              ))}
-            </div>
-          </Container>
-        </section>
-
-        {/* Talent Solution Section */}
-        <section className="py-24 bg-slate-50">
-          <Container>
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4 relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-brand-primary after:rounded-full">
-                Talent Solutions
-              </h2>
-              <p className="text-slate-600 max-w-2xl mx-auto">Scale your team with top-tier professionals.</p>
-            </div>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              {[
-                {
-                  title: "Contract Staff Augmentation",
-                  desc: "Scale your team quickly with skilled IT professionals on a flexible contract basis.",
+                  title: "Talent Solution",
+                  desc: "Build high impact teams with flexible hiring models designed for today’s tech landscape.",
+                  icon: "👥",
                   link: "/talent-solution/contract-staff-augmentation"
-                },
-                {
-                  title: "Career",
-                  desc: "Join our team of innovative professionals shaping the future of technology.",
-                  link: "/career"
                 }
-              ].map((benefit, i) => (
-                <div key={i} className="bg-white border border-slate-200 rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-                  <h3 className="text-xl font-bold text-slate-900 mb-4">{benefit.title}</h3>
-                  <p className="text-slate-600 mb-6">{benefit.desc}</p>
-                  <Link href={benefit.link} className="text-brand-primary font-semibold hover:underline">Explore &rarr;</Link>
-                </div>
+              ].map((category, i) => (
+                <Link key={i} href={category.link} className="group bg-slate-50 border border-slate-200 rounded-3xl p-10 hover:bg-white hover:shadow-2xl hover:border-brand-primary hover:scale-[1.03] transition-all duration-500 shadow-sm">
+                  <div className="text-5xl mb-6 group-hover:scale-110 transition-transform">{category.icon}</div>
+                  <h3 className="text-3xl font-bold text-slate-900 mb-4 group-hover:text-brand-primary transition-colors">{category.title}</h3>
+                  <p className="text-lg text-slate-600 mb-6">{category.desc}</p>
+                  <div className="text-brand-primary font-semibold flex items-center gap-2">
+                    Learn more <span className="group-hover:translate-x-1 transition-transform">→</span>
+                  </div>
+                </Link>
               ))}
             </div>
           </Container>
         </section>
 
-        {/* Why Choose KoyeTech Section */}
+        {/* Business Solutions Detail */}
+        <section className="py-24 bg-white border-t border-slate-50 animate-fade-in-up">
+          <Container>
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h3 className="text-3xl font-bold text-slate-900 mb-6">Business Solutions</h3>
+                <p className="text-slate-600 mb-10 text-lg">Strategy led services to design, develop, and manage high performing digital products.</p>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {[
+                    "Product Management",
+                    "Product Development",
+                    "Product Implementation & Operations",
+                    "Application Development & Maintenance",
+                    "Project Management",
+                    "AI & ML Solutions"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center gap-3 bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-primary/30 transition-all">
+                      <div className="w-2 h-2 rounded-full bg-brand-primary"></div>
+                      <span className="font-medium text-slate-700">{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="relative">
+                <div className="absolute inset-0 bg-brand-primary/5 rounded-full blur-3xl"></div>
+                <div className="relative z-10 w-full aspect-square p-2 group">
+                  <img
+                    src="/images/business-solutions.png"
+                    alt="Business Solutions"
+                    className="w-full h-full object-cover rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        {/* Accelerators Detail */}
+        <section className="py-24 bg-white border-t border-slate-50 animate-fade-in-up">
+          <Container>
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div className="order-2 lg:order-1 relative">
+                <div className="absolute inset-0 bg-brand-primary/5 rounded-full blur-3xl"></div>
+                <div className="relative z-10 w-full aspect-square p-2 group">
+                  <img
+                    src="/images/accelerators.png"
+                    alt="Accelerators"
+                    className="w-full h-full object-cover rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <h3 className="text-3xl font-bold text-slate-900 mb-6">Accelerators</h3>
+                <p className="text-slate-600 mb-10 text-lg">Fast track innovation and go to market with frameworks, tools, and execution pods.</p>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3 bg-slate-50 p-8 rounded-2xl border border-slate-200 border-l-4 border-l-brand-primary group hover:shadow-xl hover:border-brand-primary/50 transition-all">
+                    <span className="text-3xl">⚡</span>
+                    <span className="text-xl font-bold text-slate-900">Domain Specific Solutions and Tools</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        {/* Talent Solution Detail */}
+        <section className="py-24 bg-white border-t border-slate-50 animate-fade-in-up">
+          <Container>
+            <div className="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h3 className="text-3xl font-bold text-slate-900 mb-6">Talent Solution</h3>
+                <p className="text-slate-600 mb-10 text-lg">Build high impact teams with flexible hiring models designed for today’s tech landscape.</p>
+                <div className="space-y-4">
+                  {[
+                    "Contract Staff Augmentation",
+                    "Firm Hire Services",
+                    "Contract to Hire"
+                  ].map((item, i) => (
+                    <div key={i} className="flex items-center justify-between bg-slate-50 p-8 rounded-2xl border border-slate-200 group hover:border-brand-primary hover:shadow-xl hover:scale-[1.02] transition-all shadow-sm">
+                      <span className="text-xl font-bold text-slate-900">{item}</span>
+                      <span className="text-brand-primary group-hover:translate-x-1 transition-transform">→</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="relative">
+                <div className="absolute inset-0 bg-brand-primary/5 rounded-full blur-3xl"></div>
+                <div className="relative z-10 w-full aspect-square p-2 group">
+                  <img
+                    src="/images/talent-solutions.png"
+                    alt="Talent Solutions"
+                    className="w-full h-full object-cover rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              </div>
+            </div>
+          </Container>
+        </section>
+
+        {/* Work Process Section */}
         <section className="py-24 bg-white">
           <Container>
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4 relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-brand-primary after:rounded-full">
-                Why Choose KoyeTech
-              </h2>
+              <h2 className="text-4xl font-bold text-slate-900 mb-4">Our work process</h2>
             </div>
-            <div className="grid md:grid-cols-4 gap-8">
+            <div className="grid md:grid-cols-3 gap-12 relative">
+              <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-slate-100 -z-10"></div>
               {[
-                { title: "Ease of Engagement", desc: "Seamless onboarding and flexible models.", icon: "🤝" },
-                { title: "Ability to Invest", desc: "We invest in your success and growth.", icon: "💼" },
-                { title: "Longevity", desc: "Skin in the game - long term partnership.", icon: "🛡️" },
-                { title: "Diversified Talent Pool", desc: "Access to top skill from across the globe.", icon: "🌍" }
-              ].map((benefit, i) => (
-                <div key={i} className="bg-slate-50 border border-slate-100 rounded-3xl p-8 text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-                  <div className="text-4xl mb-6">{benefit.icon}</div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-4">{benefit.title}</h3>
-                  <p className="text-slate-600 text-sm">{benefit.desc}</p>
+                { title: "Discover & Align", desc: "Understanding your challenges and objectives to create a strategic roadmap.", icon: "🎯" },
+                { title: "Build & Validate", desc: "Developing robust solutions and refining them through iterative testing.", icon: "🛠️" },
+                { title: "Deliver & Scale", desc: "Launching products and scaling them to meet market demand effectively.", icon: "📈" }
+              ].map((step, i) => (
+                <div key={i} className="bg-slate-50 text-center group p-10 rounded-3xl border border-slate-200 hover:bg-white hover:border-brand-primary hover:shadow-2xl hover:scale-[1.05] transition-all duration-500 shadow-sm">
+                  <div className="w-20 h-20 bg-brand-primary text-white rounded-2xl flex items-center justify-center text-3xl mb-8 mx-auto group-hover:rotate-12 transition-transform shadow-lg shadow-brand-primary/20">
+                    {step.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">{step.title}</h3>
+                  <p className="text-slate-600 leading-relaxed">{step.desc}</p>
                 </div>
               ))}
             </div>
           </Container>
         </section>
 
-        {/* Our Process Section */}
-        <section className="py-24 bg-slate-50">
+        {/* Why Choose Section (Unique) */}
+        <section className="py-24 bg-white border-t border-slate-100">
           <Container>
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-slate-900 mb-4 relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-20 after:h-1 after:bg-brand-primary after:rounded-full">
-                Our Process
-              </h2>
+              <h2 className="text-4xl font-bold text-slate-900 mb-4">What Makes Us Unique</h2>
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
               {[
-                { title: "Discovery", desc: "We understand your goals and challenges deeply.", step: "01" },
-                { title: "Strategy", desc: "We craft a bespoke roadmap for execution.", step: "02" },
-                { title: "Execution", desc: "We deliver with precision and agility.", step: "03" }
-              ].map((process, i) => (
-                <div key={i} className="relative bg-white border border-slate-200 rounded-3xl p-8 overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
-                  <div className="absolute top-0 right-0 p-4 opacity-10 font-bold text-6xl text-brand-primary">{process.step}</div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4 relative z-10">{process.title}</h3>
-                  <p className="text-slate-600 relative z-10">{process.desc}</p>
+                { title: "Ease of Engagement", desc: "Simple and flexible partnership models.", icon: "🤝" },
+                { title: "Ability to Invest", desc: "We invest in your success with long-term goals.", icon: "💰" },
+                { title: "Longevity", desc: "Over 80% of our current customers have been engaged with us for more than two years.", icon: "🛡️" },
+                { title: "Diversified Talent pool", desc: "Access to a global network of skilled professionals.", icon: "🌍" },
+                { title: "Commitment and Accountability", desc: "Hands on execution of client focused strategies, detailed scorecards, and insightful quarterly reviews.", icon: "📉" }
+              ].map((item, i) => (
+                <div key={i} className="bg-slate-50 border border-slate-200 rounded-3xl p-10 hover:shadow-2xl hover:border-brand-primary hover:scale-[1.05] transition-all duration-500 shadow-sm">
+                  <div className="text-4xl mb-6">{item.icon}</div>
+                  <h4 className="text-xl font-bold text-slate-900 mb-4">{item.title}</h4>
+                  <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
           </Container>
         </section>
 
-
-
-        {/* CTA/Contact Section - Replaced by Footer mostly, but keeping 'Get In Touch' style from reference */}
-        <section className="py-24 bg-gradient-to-br from-white via-green-100 to-green-200/50 border-t border-green-200">
+        {/* Get in Touch Section */}
+        <section className="py-24 bg-gradient-to-br from-white via-emerald-200/50 to-white border-t border-emerald-200/50">
           <Container>
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-slate-900 mb-4">Get in Touch</h2>
               <p className="text-slate-600">Ready to start your project? Contact us today.</p>
             </div>
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
-                <span className="text-4xl mb-4 block">🇺🇸</span>
+            <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+              {/* US Office */}
+              <div className="bg-slate-50 p-10 rounded-3xl border border-slate-100 shadow-xl hover:shadow-2xl transition-all">
+                <div className="text-4xl mb-6">🇺🇸</div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">US Office</h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">
-                  28 Main St,<br />
-                  Farmington, CT 06032-2242,<br />
-                  United States
-                </p>
-                <p className="text-brand-primary mt-4 font-semibold hover:underline">
-                  <a href="tel:+18604146902">+1 860-414-6902</a>
-                </p>
+                <div className="space-y-4 text-slate-600">
+                  <p className="flex items-start gap-3">
+                    <span className="text-brand-primary">📍</span>
+                    28 Main St Farmington, CT 06032-2242
+                  </p>
+                  <p className="flex items-center gap-3">
+                    <span className="text-brand-primary">📞</span>
+                    <a href="tel:+18604146902" className="hover:text-brand-primary">+1 860-414-6902</a>
+                  </p>
+                  <p className="flex items-center gap-3">
+                    <span className="text-brand-primary">✉️</span>
+                    <a href="mailto:hr@koyetech.com" className="hover:text-brand-primary">hr@koyetech.com</a>
+                  </p>
+                </div>
               </div>
-              <div className="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm hover:shadow-md transition-all">
-                <span className="text-4xl mb-4 block">🇮🇳</span>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">India Office</h3>
-                <p className="text-slate-600 mb-4 leading-relaxed">
-                  4th Floor, Kapil Towers, ISB Rd,<br />
-                  Financial District, Nanakramguda,<br />
-                  Hyderabad, Telangana 500032, India
-                </p>
-                <p className="text-brand-primary mt-4 font-semibold hover:underline">
-                  <a href="tel:+917207210071">+91 7207210071</a>
-                </p>
+              {/* India Office */}
+              <div className="bg-slate-50 p-10 rounded-3xl border border-slate-100 shadow-xl hover:shadow-2xl transition-all">
+                <div className="text-4xl mb-6">🇮🇳</div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">Indian Office</h3>
+                <div className="space-y-4 text-slate-600">
+                  <p className="flex items-start gap-3">
+                    <span className="text-brand-primary">📍</span>
+                    4th Floor, Kapil Towers, ISB Rd, Financial District, Nanakramguda, Hyderabad, Telangana 500032
+                  </p>
+                  <p className="flex items-center gap-3">
+                    <span className="text-brand-primary">📞</span>
+                    <a href="tel:+17207210071" className="hover:text-brand-primary">+1 7207210071</a>
+                  </p>
+                </div>
               </div>
             </div>
           </Container>

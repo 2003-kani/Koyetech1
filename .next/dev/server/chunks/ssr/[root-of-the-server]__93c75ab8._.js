@@ -287,25 +287,39 @@ const metadata = {
 };
 function AcceleratorsPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Koyetech1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Koyetech1$2f$src$2f$components$2f$StandardPage$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["StandardPage"], {
-        title: "Accelerators",
-        subtitle: "Pre-built solutions and frameworks to accelerate your time-to-market.",
+        title: "Accelerate Innovation with Tailored Tools Built for Your Industry",
+        subtitle: "KoyeTech delivers domain-specific tools that speed up development, cut costs, and boost productivity for your digital initiatives.",
         sections: [
             {
-                title: "Domain-Specific Tools",
-                body: "Leverage our specialized tools designed for your industry vertical to solve specific challenges.",
+                title: "FHIRxConnect",
+                body: "FHIRxConnect is a cutting-edge Middleware FHIR API Service Hub designed to revolutionize healthcare data interoperability. Our core objective is to seamlessly integrate diverse Electronic Medical Record (EMR) systems, significantly enhancing data exchange and operational efficiency across the healthcare ecosystem.",
                 bullets: [
-                    "Tailored Industry Solutions",
-                    "Rapid Integration",
-                    "Proven Methodologies"
+                    "Enhanced Communication: We promote true interoperability, ensuring efficient and reliable data flow between all connected systems.",
+                    "Simplified Integration: We promote true interoperability, ensuring efficient and reliable data flow between all connected systems.",
+                    "Enhanced Accessibility: Empower providers with instant access to patient data, enabling faster, informed decisions and improved patient care.",
+                    "Cost Reduction & Efficiency: Our hub ultimately lowers operational costs and significantly boosts efficiency in healthcare data management and delivery."
                 ]
             },
             {
-                title: "Analytics & Insight",
-                body: "Turn data into actionable intelligence with our advanced analytics frameworks.",
+                title: "How it goes (Our Process)",
+                body: "A structured approach to ensure the right fit and seamless integration for your business.",
                 bullets: [
-                    "Data Visualization",
-                    "Predictive Modeling",
-                    "Real-time Insights"
+                    "Assessment & Fitment: We evaluate your current systems and identify where accelerators can plug in.",
+                    "Configuration & Customization: We tailor each solution to your workflows, branding, and compliance needs.",
+                    "Integration & Launch: Seamless integration with existing platforms (ERP, CRM, APIs, Cloud, etc.)",
+                    "Training & Enablement: User onboarding, technical documentation, and training to ensure adoption.",
+                    "Full Support & Scale: We provide ongoing support, enhancements, and version upgrades as you grow."
+                ]
+            },
+            {
+                title: "Frequently Asked Questions",
+                body: "Common questions about our domain-specific tools and integration services.",
+                bullets: [
+                    "What are domain-specific solutions? These are custom-built tools tailored to the unique needs of specific industries or business domains.",
+                    "Which industries do you support? We serve industries like healthcare, finance, retail, manufacturing, education, and logistics.",
+                    "Can you customize tools to match our workflows? Yes, we design solutions that align with your existing processes and business goals.",
+                    "Do you offer integration with existing systems? Absolutely. We ensure seamless integration with CRMs, ERPs, databases, and internal platforms.",
+                    "How do you ensure scalability and security? We build secure, scalable architectures using best practices in cloud, data protection, and compliance."
                 ]
             }
         ]

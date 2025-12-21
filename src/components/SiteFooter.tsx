@@ -116,8 +116,8 @@ export function SiteFooter() {
             <ul className="space-y-3">
               {[
                 { label: 'Contract Staff Augmentation', href: '/talent-solution/contract-staff-augmentation' },
-                { label: 'Firm Hire Services', href: '/talent-solution/contract-staff-augmentation' }, // Redirecting to main talent page for now as per nav structure
-                { label: 'Contract to Hire', href: '/talent-solution/contract-staff-augmentation' }
+                { label: 'Firm Hire Services', href: '/talent-solution/firm-hire-services' },
+                { label: 'Contract to Hire', href: '/talent-solution/contract-to-hire' }
               ].map((item) => (
                 <li key={item.label}>
                   <Link href={item.href} className="text-sm text-slate-400 hover:text-brand-primary transition-colors">

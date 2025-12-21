@@ -48,14 +48,29 @@ export const nav = {
       label: "Business Solutions",
       items: [
         {
-          label: "Product Management",
+          label: "Product Management Consulting",
           href: "/business-solutions/product-management",
           description: "Strategic product planning and roadmap development.",
         },
         {
-          label: "AI & ML Solutions",
+          label: "Product Development Consulting",
+          href: "/business-solutions/product-development",
+          description: "End-to-end design, development, and launch of digital products.",
+        },
+        {
+          label: "AIML Solution",
           href: "/business-solutions/artificial-intelligence-machine-learning",
-          description: "Harness the power of AI to automate and innovate.",
+          description: "Harness AI to automate and make smarter decisions.",
+        },
+        {
+          label: "Health Care Interoperability Solution",
+          href: "/business-solutions/interop-solutions",
+          description: "Seamless connections, stronger performance.",
+        },
+        {
+          label: "Data Analytics",
+          href: "/business-solutions/data-analytics",
+          description: "From data overload to data clarity.",
         },
       ],
     } satisfies NavGroup,
@@ -67,6 +82,16 @@ export const nav = {
           label: "Contract Staff Augmentation",
           href: "/talent-solution/contract-staff-augmentation",
           description: "Scale your team quickly with skilled IT professionals.",
+        },
+        {
+          label: "Firm Hire Services",
+          href: "/talent-solution/firm-hire-services",
+          description: "Hire full-time talent that drives long-term success.",
+        },
+        {
+          label: "Contract to Hire",
+          href: "/talent-solution/contract-to-hire",
+          description: "Build agile, scalable teams with expert talent on demand.",
         },
       ],
     } satisfies NavGroup,

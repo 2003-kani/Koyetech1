@@ -8,12 +8,11 @@ export function PageHero({
   subtitle: string;
 }) {
   return (
-    <div className="relative border-b border-slate-200/60 bg-slate-50 pt-32 pb-24 overflow-hidden mesh-bg">
+    <div className="relative border-b border-slate-200/60 bg-gradient-to-br from-white via-blue-300 to-white pt-32 pb-24 overflow-hidden mesh-bg">
       {/* Animated Background */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-brand-light/20 rounded-full blur-[100px] animate-float opacity-60"></div>
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-primary/10 rounded-full blur-[120px] animate-scale-in" style={{ animationDuration: '10s' }}></div>
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none overflow-hidden -z-10">
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-[120px]"></div>
       </div>
 
       <Container className="relative z-10 py-12 sm:py-16 text-center">

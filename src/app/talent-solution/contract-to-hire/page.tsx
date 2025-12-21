@@ -8,39 +8,40 @@ export const metadata: Metadata = {
 export default function ContractToHirePage() {
   return (
     <StandardPage
-      title="Contract to Hire"
-      subtitle="De-risk hiring by evaluating performance in a real project environment before converting to a full-time role."
+      title="Build Agile, Scalable Teams with Expert Talent On Demand"
+      subtitle="KoyeTech’s Contract Staff Augmentation provides skilled tech professionals to help you scale fast and meet goals."
       sections={[
         {
-          title: "How it works",
-          body: "Start with a contract engagement with clear expectations. If it’s a strong match, transition the candidate to full-time based on your timeline.",
-          bullets: [
-            "Defined trial period",
-            "Clear success criteria",
-            "Structured feedback cadence",
-            "Conversion support",
-          ],
+          title: "Flexible Trial Engagements",
+          body: "Start with short term contracts (3–6 months) to evaluate performance and fit.",
         },
         {
-          title: "When to use it",
-          body: "Contract-to-hire is ideal when roles are critical, the market is tight, or you want to reduce hiring risk.",
-          bullets: [
-            "Hard-to-fill technical roles",
-            "Leadership roles",
-            "High-impact projects",
-            "Urgent scaling needs",
-          ],
+          title: "Smooth Transition to Full Time",
+          body: "Easily convert top performers to full-time roles with minimal effort.",
         },
         {
-          title: "Outcomes",
-          body: "Better hiring decisions with less risk and stronger long-term team stability.",
-          bullets: [
-            "Reduced hiring risk",
-            "Faster onboarding",
-            "Better retention",
-            "Improved confidence",
-          ],
+          title: "End to End Recruitment",
+          body: "We handle sourcing, screening, onboarding, and contract management.",
         },
+        {
+          title: "Role-Based Staffing",
+          body: "From entry-level to senior professionals across tech, non-tech, and creative roles.",
+        },
+        {
+          title: "Compliance & Payroll Support",
+          body: "We manage contracts, payroll, and HR compliance throughout the engagement.",
+        },
+        {
+          title: "How it goes",
+          body: "A flexible path to full-time hiring.",
+          bullets: [
+            "Understand the Role: We align with your team to define the role, skills needed, and ideal candidate profile.",
+            "Source & Screen Talent: Our recruiters identify and vet candidates using advanced tools and a pre-qualified talent pool.",
+            "Shortlist & Interview: You review top candidates and conduct interviews to assess technical and cultural fit.",
+            "Contract Onboarding: The selected candidate begins working on a contract basis within your team.",
+            "Full-Time Conversion: If satisfied, easily convert the candidate to a full time hire simple and commitment free."
+          ],
+        }
       ]}
     />
   );

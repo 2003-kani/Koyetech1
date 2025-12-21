@@ -2,25 +2,24 @@ import { Metadata } from "next";
 import { StandardPage } from "@/components/StandardPage";
 
 export const metadata: Metadata = {
-  title: "Product Management",
+  title: "Product Development",
 };
 
-export default function ProductManagementPage() {
+export default function ProductDevelopmentPage() {
   return (
     <StandardPage
-      title="Product Management"
-      subtitle="Strategic product planning and roadmap development to drive business success."
+      title="Turning Ideas into Market Ready Products"
+      subtitle="From strategy to execution, we bring your vision to life with end to end project development services."
       sections={[
         {
-          title: "Transform Ideas into Successful Products",
-          body: "We help you define vision, strategy, and execution plans that align with your business goals.",
+          title: "Our Process",
+          body: "We follow a comprehensive lifecycle to transform your vision into a robust digital product.",
           bullets: [
-            "Product Strategy",
-            "Roadmap Planning",
-            "Stakeholder Management",
-            "Market Research",
-            "Metrics & Analytics",
-            "Product Launch"
+            "Discovery & Planning: Define goals, success metrics, and product roadmap.",
+            "Design & Prototyping: Create UI/UX mockups and interactive prototypes.",
+            "Agile Development: Build features incrementally using sprints and iterative feedback.",
+            "Testing & Debugging: Ensure functionality, security & scalability of product.",
+            "Launch & Growth: Deploy with confidence and scale with ongoing support.",
           ],
         },
       ]}

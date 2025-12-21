@@ -8,39 +8,35 @@ export const metadata: Metadata = {
 export default function DataAnalyticsPage() {
   return (
     <StandardPage
-      title="Data Analytics"
-      subtitle="Turn data into decision-ready insights through KPI frameworks, dashboards, and reliable reporting."
+      title="From Data Overload to Data Clarity"
+      subtitle="KOYETECH’s Data Analytics solutions uncover the insights hidden in your information, so you can act quickly and confidently."
       sections={[
         {
-          title: "KPI and metrics design",
-          body: "We define the metrics that matter and build a reporting model that stays consistent over time.",
-          bullets: [
-            "KPI workshops",
-            "Metric definitions and governance",
-            "Data model design",
-            "Data validation practices",
-          ],
+          title: "Clear, Actionable Insights",
+          body: "Dashboards and reports that focus on what matters.",
         },
         {
-          title: "Dashboards and reporting",
-          body: "Deliver dashboards that are clear, performant, and adopted by stakeholders.",
-          bullets: [
-            "Executive dashboards",
-            "Operational reporting",
-            "Self-service enablement",
-            "Performance optimization",
-          ],
+          title: "Predictive Power",
+          body: "Anticipate needs before they become urgent.",
         },
         {
-          title: "Outcomes",
-          body: "Less time debating numbers and more time making decisions.",
-          bullets: [
-            "Trusted reporting",
-            "Improved visibility",
-            "Better planning",
-            "Higher adoption",
-          ],
+          title: "Efficiency Gains",
+          body: "Identify process improvements that save time and resources.",
         },
+        {
+          title: "Compliance Support",
+          body: "Transparent data tracking for audit readiness.",
+        },
+        {
+          title: "How We Deliver",
+          body: "Unify data from multiple sources into a single, accessible environment.",
+          bullets: [
+            "Integration: Unify data from multiple sources into a single, accessible environment.",
+            "Cleansing: Remove duplicates, errors, and inconsistencies.",
+            "Analysis: Apply statistical models, predictive tools, and visualizations.",
+            "Implementation: Turn insights into strategies and measurable outcomes."
+          ],
+        }
       ]}
     />
   );

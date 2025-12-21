@@ -86,14 +86,29 @@ const nav = {
             label: "Business Solutions",
             items: [
                 {
-                    label: "Product Management",
+                    label: "Product Management Consulting",
                     href: "/business-solutions/product-management",
                     description: "Strategic product planning and roadmap development."
                 },
                 {
-                    label: "AI & ML Solutions",
+                    label: "Product Development Consulting",
+                    href: "/business-solutions/product-development",
+                    description: "End-to-end design, development, and launch of digital products."
+                },
+                {
+                    label: "AIML Solution",
                     href: "/business-solutions/artificial-intelligence-machine-learning",
-                    description: "Harness the power of AI to automate and innovate."
+                    description: "Harness AI to automate and make smarter decisions."
+                },
+                {
+                    label: "Health Care Interoperability Solution",
+                    href: "/business-solutions/interop-solutions",
+                    description: "Seamless connections, stronger performance."
+                },
+                {
+                    label: "Data Analytics",
+                    href: "/business-solutions/data-analytics",
+                    description: "From data overload to data clarity."
                 }
             ]
         },
@@ -104,6 +119,16 @@ const nav = {
                     label: "Contract Staff Augmentation",
                     href: "/talent-solution/contract-staff-augmentation",
                     description: "Scale your team quickly with skilled IT professionals."
+                },
+                {
+                    label: "Firm Hire Services",
+                    href: "/talent-solution/firm-hire-services",
+                    description: "Hire full-time talent that drives long-term success."
+                },
+                {
+                    label: "Contract to Hire",
+                    href: "/talent-solution/contract-to-hire",
+                    description: "Build agile, scalable teams with expert talent on demand."
                 }
             ]
         }
@@ -837,11 +862,11 @@ function SiteFooter() {
                                         },
                                         {
                                             label: 'Firm Hire Services',
-                                            href: '/talent-solution/contract-staff-augmentation'
+                                            href: '/talent-solution/firm-hire-services'
                                         },
                                         {
                                             label: 'Contract to Hire',
-                                            href: '/talent-solution/contract-staff-augmentation'
+                                            href: '/talent-solution/contract-to-hire'
                                         }
                                     ].map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Koyetech1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Koyetech1$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$OneDrive$2f$Desktop$2f$Koyetech1$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
