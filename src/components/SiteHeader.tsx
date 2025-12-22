@@ -227,80 +227,68 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/80 backdrop-blur-sm">
-      <Container className="flex h-16 items-center justify-between">
-        <div className="flex items-center gap-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center">
             <Logo className="h-8 w-auto" />
           </Link>
-          <nav className="hidden md:flex items-center gap-1">
-            <MenuLink href="/about">About</MenuLink>
+          
+          <nav className="hidden md:flex items-center gap-6">
+            <MenuLink href="/">Home</MenuLink>
+            <MenuLink href="/company">Company</MenuLink>
             <Dropdown label="Business Solutions" items={business} />
+            <MenuLink href="/accelerators">Accelerators</MenuLink>
             <Dropdown label="Talent Solution" items={talent} />
-            <MenuLink href="/blog">Blog</MenuLink>
+            <MenuLink href="/career">Career</MenuLink>
             <MenuLink href="/contact">Contact</MenuLink>
           </nav>
-        </div>
 
-        <div className="hidden md:flex items-center gap-4">
-          <Link
-            href="/login"
-            className="px-4 py-2 text-sm font-medium text-slate-700 hover:text-brand-primary transition-colors"
-          >
-            Log in
-          </Link>
-          <Link
-            href="/get-started"
-            className="px-4 py-2 text-sm font-medium text-white bg-brand-primary hover:bg-brand-primary/90 rounded-lg transition-colors"
-          >
-            Get Started
-          </Link>
+          {/* Mobile menu button */}
+          <div className="md:hidden">
+            <button
+              type="button"
+              onClick={toggleMenu}
+              className="inline-flex items-center justify-center p-2 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary"
+              aria-expanded={isMenuOpen}
+            >
+              <span className="sr-only">Open main menu</span>
+              {isMenuOpen ? (
+                <svg
+                  className="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  className="block h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
-
-        {/* Mobile menu button */}
-        <div className="md:hidden">
-          <button
-            type="button"
-            onClick={toggleMenu}
-            className="inline-flex items-center justify-center p-2 rounded-md text-slate-700 hover:text-slate-900 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-primary"
-            aria-expanded={isMenuOpen}
-          >
-            <span className="sr-only">Open main menu</span>
-            {isMenuOpen ? (
-              <svg
-                className="block h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            ) : (
-              <svg
-                className="block h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            )}
-          </button>
-        </div>
-      </Container>
+      </div>
 
       {/* Mobile menu */}
       <Animate
@@ -309,7 +297,8 @@ export function SiteHeader() {
         show={isMenuOpen}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-slate-200">
-          <MenuLink href="/about">About</MenuLink>
+          <MenuLink href="/">Home</MenuLink>
+          <MenuLink href="/company">Company</MenuLink>
           <Dropdown
             label="Business Solutions"
             items={business}
@@ -317,6 +306,7 @@ export function SiteHeader() {
             isExpanded={expandedDropdown === 'business'}
             onToggle={() => toggleDropdown('business')}
           />
+          <MenuLink href="/accelerators">Accelerators</MenuLink>
           <Dropdown
             label="Talent Solution"
             items={talent}
@@ -324,22 +314,8 @@ export function SiteHeader() {
             isExpanded={expandedDropdown === 'talent'}
             onToggle={() => toggleDropdown('talent')}
           />
-          <MenuLink href="/blog">Blog</MenuLink>
+          <MenuLink href="/career">Career</MenuLink>
           <MenuLink href="/contact">Contact</MenuLink>
-          <div className="pt-4 mt-4 border-t border-slate-100">
-            <Link
-              href="/login"
-              className="block px-4 py-2 text-base font-medium text-slate-700 hover:text-brand-primary hover:bg-slate-50 rounded-lg"
-            >
-              Log in
-            </Link>
-            <Link
-              href="/get-started"
-              className="mt-2 block w-full px-4 py-2 text-base font-medium text-center text-white bg-brand-primary hover:bg-brand-primary/90 rounded-lg"
-            >
-              Get Started
-            </Link>
-          </div>
         </div>
       </Animate>
     </header>

@@ -12,10 +12,20 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <div>
-      <PageHero
-        title="We're Here to Help You Grow. Let's Connect!"
-        subtitle="Reach out to discuss your project, explore partnership opportunities, or learn more about our services."
-      />
+      <section className="relative pt-32 pb-32 overflow-hidden bg-gradient-to-br from-white via-blue-300 to-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6">
+            We're Here to Help You <span className="text-brand-primary">Grow.</span> Let's Connect!
+          </h1>
+          <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
+            Reach out to discuss your project, explore partnership opportunities, or learn more about our services.
+          </p>
+        </div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none -z-10">
+          <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[120px]"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-[120px]"></div>
+        </div>
+      </section>
 
       <Section className="bg-gradient-to-br from-white via-emerald-200/50 to-white pb-24 border-t border-emerald-200/50">
         <Container>

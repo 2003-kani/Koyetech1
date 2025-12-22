@@ -54,14 +54,12 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
       </head>
       <body
-        className={`${outfit.variable} ${inter.variable} min-h-screen antialiased bg-background text-foreground text-base leading-relaxed`}
+        className={`${outfit.variable} ${inter.variable} min-h-screen antialiased bg-background text-foreground text-base leading-relaxed overflow-x-hidden`}
       >
         <div className="flex flex-col min-h-screen">
           <SiteHeader />
-          <main className="flex-grow px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto w-full max-w-7xl">
-              {children}
-            </div>
+          <main className="flex-grow">
+            {children}
           </main>
           <SiteFooter />
         </div>

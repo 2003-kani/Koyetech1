@@ -12,11 +12,21 @@ export const metadata: Metadata = {
 
 export default function CareerPage() {
   return (
-    <div className="min-h-screen bg-slate-50">
-      <PageHero
-        title="Build the Future. Grow with Us."
-        subtitle="Join our team of innovative professionals shaping the future of technology."
-      />
+    <div className="min-h-screen bg-white">
+      <section className="relative pt-32 pb-32 overflow-hidden bg-gradient-to-br from-white via-blue-300 to-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 mb-6">
+            Build the Future. <span className="text-brand-primary">Grow with Us.</span>
+          </h1>
+          <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
+            Join our team of innovative professionals shaping the future of technology.
+          </p>
+        </div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none -z-10">
+          <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-brand-primary/5 rounded-full blur-[120px]"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-blue-400/5 rounded-full blur-[120px]"></div>
+        </div>
+      </section>
 
       <Section className="bg-white py-24">
         <Container>
