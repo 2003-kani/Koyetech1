@@ -224,7 +224,7 @@ export function SiteHeader() {
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Link href="/" className="flex items-center">
-            <Logo className="h-8 w-auto" />
+            <Logo className="h-10 w-auto" />
           </Link>
           
           <nav className="hidden md:flex items-center gap-6">

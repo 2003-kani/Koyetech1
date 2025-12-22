@@ -72,7 +72,7 @@ export function SiteFooter() {
           {/* Column 1: About */}
           <div>
             <Link href="/" className="inline-block bg-white p-3 rounded-xl shadow-lg shadow-black/5 hover:bg-white/90 transition-colors">
-              <Logo className="h-8 w-auto" />
+              <Logo className="h-10 w-auto" />
             </Link>
             <h3 className="text-white font-bold mt-6 mb-4">About KoyeTech</h3>
             <p className="text-sm leading-relaxed text-slate-400 mb-6">

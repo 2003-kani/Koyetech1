@@ -10,12 +10,12 @@ export function Logo({
 }) {
   return (
     <Image
-      src="/koyetech-logo.svg"
+      src="/KoyetechLogo.png"
       alt="Koyetech"
-      width={170}
-      height={38}
+      width={200}
+      height={45}
       priority={priority}
-      className={cn("h-8 w-auto", className)}
+      className={cn("h-10 w-auto", className)}
     />
   );
 }
