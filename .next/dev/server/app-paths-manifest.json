@@ -1,16 +1,10 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/accelerators/page": "app/accelerators/page.js",
-  "/business-solutions/artificial-intelligence-machine-learning/page": "app/business-solutions/artificial-intelligence-machine-learning/page.js",
-  "/business-solutions/data-analytics/page": "app/business-solutions/data-analytics/page.js",
-  "/business-solutions/interop-solutions/page": "app/business-solutions/interop-solutions/page.js",
   "/business-solutions/product-development/page": "app/business-solutions/product-development/page.js",
   "/business-solutions/product-management/page": "app/business-solutions/product-management/page.js",
   "/career/page": "app/career/page.js",
   "/company/page": "app/company/page.js",
   "/contact/page": "app/contact/page.js",
   "/page": "app/page.js",
-  "/talent-solution/contract-staff-augmentation/page": "app/talent-solution/contract-staff-augmentation/page.js",
-  "/talent-solution/contract-to-hire/page": "app/talent-solution/contract-to-hire/page.js",
-  "/talent-solution/firm-hire-services/page": "app/talent-solution/firm-hire-services/page.js"
+  "/talent-solution/contract-staff-augmentation/page": "app/talent-solution/contract-staff-augmentation/page.js"
 }
