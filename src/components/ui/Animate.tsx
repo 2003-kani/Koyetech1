@@ -33,14 +33,15 @@ export function Animate({
   const MotionComponent = motion[Component as keyof typeof motion] || motion.div;
 
   // Apply delay and duration if provided
-  const customVariantsWithTiming = {
+  const visible = (variants as any)?.visible ?? {};
+  const customVariantsWithTiming: Variants = {
     ...variants,
     visible: {
-      ...variants.visible,
+      ...visible,
       transition: {
-        ...variants.visible?.transition,
-        ...(delay && { delay }),
-        ...(duration && { duration }),
+        ...(visible.transition ?? {}),
+        ...(typeof delay === 'number' ? { delay } : {}),
+        ...(typeof duration === 'number' ? { duration } : {}),
       },
     },
   };
