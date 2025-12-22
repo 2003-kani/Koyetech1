@@ -1,142 +1,71 @@
-'use client';
+"use client";
 
-import { ReactNode, useEffect, useRef } from 'react';
-import { motion, AnimatePresence, Variants } from 'framer-motion';
-import { motionVariants, animations, animationUtils } from '@/lib/animations';
+import { motion, AnimatePresence } from "framer-motion";
+import { ReactNode } from "react";
 
-type AnimationType = keyof typeof motionVariants;
-
-type AnimateProps = {
-  children: ReactNode;
-  type?: AnimationType;
+interface AnimateProps {
+  children: React.ReactNode;
+  type?: "fade" | "slideUp" | "slideDown" | "scale";
   show?: boolean;
-  delay?: number;
-  duration?: number;
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
-  customVariants?: Variants;
-  [key: string]: any;
-};
+  delay?: number;
+}
 
 export function Animate({
   children,
-  type = 'fade',
+  type = "fade",
   show = true,
+  className = "",
   delay = 0,
-  duration,
-  className = '',
-  as: Component = 'div',
-  customVariants,
-  ...props
 }: AnimateProps) {
-  const variants = customVariants || motionVariants[type];
-  const MotionComponent = motion[Component as keyof typeof motion] || motion.div;
-
-  // Apply delay and duration if provided
-  const visible = (variants as any)?.visible ?? {};
-  const customVariantsWithTiming: Variants = {
-    ...variants,
-    visible: {
-      ...visible,
-      transition: {
-        ...(visible.transition ?? {}),
-        ...(typeof delay === 'number' ? { delay } : {}),
-        ...(typeof duration === 'number' ? { duration } : {}),
-      },
+  const variants = {
+    fade: {
+      hidden: { opacity: 0 },
+      visible: { opacity: 1 },
+    },
+    slideUp: {
+      hidden: { opacity: 0, y: 20 },
+      visible: { opacity: 1, y: 0 },
+    },
+    slideDown: {
+      hidden: { opacity: 0, y: -20 },
+      visible: { opacity: 1, y: 0 },
+    },
+    scale: {
+      hidden: { opacity: 0, scale: 0.95 },
+      visible: { opacity: 1, scale: 1 },
     },
   };
+
+  const transition = {
+    duration: 0.3,
+    delay,
+    ease: [0.4, 0, 0.2, 1] as const,
+  };
+
+  const initial = "hidden";
+  const animate = show ? "visible" : "hidden";
+  const exit = "hidden";
 
   return (
     <AnimatePresence mode="wait">
       {show && (
-        <MotionComponent
-          initial="hidden"
-          animate="visible"
-          exit="exit"
-          variants={customVariantsWithTiming}
+        <motion.div
+          initial={initial}
+          animate={animate}
+          exit={exit}
+          variants={variants[type]}
+          transition={transition}
           className={className}
           style={{
-            ...animationUtils,
             willChange: 'transform, opacity',
+            backfaceVisibility: 'hidden',
+            WebkitFontSmoothing: 'antialiased',
           }}
-          {...props}
         >
           {children}
-        </MotionComponent>
+        </motion.div>
       )}
     </AnimatePresence>
   );
 }
-
-type StaggerContainerProps = {
-  children: ReactNode;
-  className?: string;
-  show?: boolean;
-  staggerDelay?: number;
-};
-
-export function StaggerContainer({
-  children,
-  className = '',
-  show = true,
-  staggerDelay = 0.05,
-}: StaggerContainerProps) {
-  return (
-    <Animate
-      type="staggerContainer"
-      className={className}
-      show={show}
-      customVariants={{
-        hidden: { opacity: 0 },
-        visible: {
-          opacity: 1,
-          transition: {
-            staggerChildren: staggerDelay,
-            delayChildren: 0.1,
-          },
-        },
-      }}
-    >
-      {children}
-    </Animate>
-  );
-}
-
-type StaggerItemProps = {
-  children: ReactNode;
-  className?: string;
-  delay?: number;
-};
-
-export function StaggerItem({ children, className = '', delay = 0 }: StaggerItemProps) {
-  return (
-    <motion.div
-      variants={{
-        hidden: { opacity: 0, y: 10 },
-        visible: {
-          opacity: 1,
-          y: 0,
-          transition: {
-            type: 'spring',
-            stiffness: 300,
-            damping: 24,
-            delay,
-          },
-        },
-      }}
-      className={className}
-      style={{
-        ...animationUtils,
-        willChange: 'transform, opacity',
-      }}
-    >
-      {children}
-    </motion.div>
-  );
-}
-
-// Re-export motion components for convenience
-export { motion, AnimatePresence };
-
-// Export animation utilities
-export { animations, motionVariants, animationUtils } from '@/lib/animations';

@@ -161,16 +161,10 @@ function Dropdown({
       <Animate 
         type="slideUp"
         show={isOpen}
-        className="absolute right-0 top-full z-50 mt-1 w-64 rounded-xl border border-slate-200 bg-white p-2 shadow-xl shadow-slate-200/50"
-        style={{
-          position: 'absolute',
-          pointerEvents: isOpen ? 'auto' : 'none',
-          opacity: isOpen ? 1 : 0,
-          transform: isOpen ? 'translateY(0)' : 'translateY(10px)',
-          transition: isOpen 
-            ? 'opacity 200ms ease-out, transform 200ms ease-out' 
-            : 'opacity 150ms ease-in, transform 150ms ease-in'
-        }}
+        className={cn(
+          "absolute right-0 top-full z-50 mt-1 w-64 rounded-xl border border-slate-200 bg-white p-2 shadow-xl shadow-slate-200/50",
+          isOpen ? "pointer-events-auto" : "pointer-events-none"
+        )}
       >
         <div className="space-y-1">
           {items.map((it, index) => (
