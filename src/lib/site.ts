@@ -2,7 +2,7 @@ export const site = {
   name: "Koyetech",
   legalName: "Koyetech",
   tagline: "Staff augmentation, digital solutions, and business consulting to help teams scale with confidence.",
-  email: "hr@koyetech.com",
+  email: "info@koyetech.com",
   locations: {
     us: {
       label: "US Office",
@@ -22,7 +22,7 @@ export const site = {
     },
   },
   social: {
-    linkedin: null as string | null,
+    linkedin: 'https://www.linkedin.com/company/koyetech/',
   },
   brand: {
     primary: {
