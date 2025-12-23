@@ -24,7 +24,7 @@ export default function HomePage() {
                 <Button as="a" href="#Services" className="rounded-full bg-brand-primary px-10 py-5 text-lg font-semibold text-white hover:bg-brand-dark transition-all shadow-lg shadow-brand-primary/25">
                   Explore Services
                 </Button>
-                <Button as="a" href="mailto:hr@koyetech.com" variant="outline" className="rounded-full px-10 py-5 text-lg font-semibold bg-white text-slate-900 border-slate-200 hover:bg-slate-50 transition-all shadow-sm">
+                <Button as="a" href="mailto:info@koyetech.com" variant="outline" className="rounded-full px-10 py-5 text-lg font-semibold bg-white text-slate-900 border-slate-200 hover:bg-slate-50 transition-all shadow-sm">
                   Get in Touch
                 </Button>
               </div>
@@ -86,17 +86,20 @@ export default function HomePage() {
                 <p className="text-slate-600 mb-10 text-lg">Strategy led services to design, develop, and manage high performing digital products.</p>
                 <div className="grid sm:grid-cols-2 gap-4">
                   {[
-                    "Product Management",
-                    "Product Development",
-                    "Product Implementation & Operations",
-                    "Application Development & Maintenance",
-                    "Project Management",
-                    "AI & ML Solutions"
+                    { label: "Product Management Consulting", href: "/business-solutions/product-management" },
+                    { label: "Product Development Consulting", href: "/business-solutions/product-development" },
+                    { label: "AIML Solution", href: "/business-solutions/artificial-intelligence-machine-learning" },
+                    { label: "Health Care Interoperability Solution", href: "/business-solutions/interop-solutions" },
+                    { label: "Data Analytics", href: "/business-solutions/data-analytics" }
                   ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-3 bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-primary/30 transition-all">
-                      <div className="w-2 h-2 rounded-full bg-brand-primary"></div>
-                      <span className="font-medium text-slate-700">{item}</span>
-                    </div>
+                    <Link 
+                      key={i} 
+                      href={item.href}
+                      className="flex items-center gap-3 bg-slate-50 p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-primary/30 transition-all group"
+                    >
+                      <div className="w-2 h-2 rounded-full bg-brand-primary group-hover:scale-125 transition-transform"></div>
+                      <span className="font-medium text-slate-700 group-hover:text-brand-primary transition-colors">{item.label}</span>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -248,7 +251,7 @@ export default function HomePage() {
                   </p>
                   <p className="flex items-center gap-3">
                     <span className="text-brand-primary">✉️</span>
-                    <a href="mailto:hr@koyetech.com" className="hover:text-brand-primary">hr@koyetech.com</a>
+                    <a href="mailto:info@koyetech.com" className="hover:text-brand-primary">info@koyetech.com</a>
                   </p>
                 </div>
               </div>
@@ -263,7 +266,7 @@ export default function HomePage() {
                   </p>
                   <p className="flex items-center gap-3">
                     <span className="text-brand-primary">📞</span>
-                    <a href="tel:+17207210071" className="hover:text-brand-primary">+1 7207210071</a>
+                    <a href="tel:+917207210071" className="hover:text-brand-primary">+91 7207210071</a>
                   </p>
                 </div>
               </div>
